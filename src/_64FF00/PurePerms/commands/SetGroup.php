@@ -50,7 +50,7 @@ class SetGroup extends Command implements PluginIdentifiableCommand
 			return true;
 		}
 		
-		$levelName = ( isset($args[2]) && ($this->plugin->getServer()->getLevelByName($args[2]) != null) ) ?  $this->plugin->getServer()->getLevelByName($args[2])->getName() : null;
+		$levelName = (( isset($args[2]) && ($this->plugin->getServer()->getLevelByName($args[2]) != null) ) ?  $this->plugin->getServer()->getLevelByName($args[2])->getName() : null;
 		
 		$this->plugin->setGroup($player, $group, $levelName);
 		
